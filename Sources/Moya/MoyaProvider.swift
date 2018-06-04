@@ -59,7 +59,7 @@ open class MoyaProvider<Target: TargetType>: MoyaProviderType {
     public typealias StubClosure = (Target) -> Moya.StubBehavior
 
     /// A closure responsible for mapping a `TargetType` to an `EndPoint`.
-    open let endpointClosure: EndpointClosure
+    open var endpointClosure: EndpointClosure
 
     /// A closure deciding if and what request should be performed.
     open let requestClosure: RequestClosure
